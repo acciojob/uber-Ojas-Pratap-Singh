@@ -65,4 +65,5 @@ public class Cab{
     public void setDriver(Driver driver) {
         this.driver = driver;
     }
+
 }
