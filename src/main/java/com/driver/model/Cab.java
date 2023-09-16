@@ -21,11 +21,11 @@ public class Cab{
     public Cab(){
         //no args constructor
     }
-    public Cab(int Id , int perKmRate , boolean  avaiable){
+    public Cab(int Id , int perKmRate , boolean  available){
         //all args constructor
         this.Id=Id;
         this.perKmRate = perKmRate;
-        this. available =  avaiable;
+        this. available =  available;
     }
     public Cab(int perKmRate ){
         this.perKmRate = perKmRate;
@@ -55,7 +55,7 @@ public class Cab{
     }
 
     public void setAvailable(boolean avaiable) {
-        this.available = avaiable;
+        this.available = available;
     }
 
     public Driver getDriver() {
