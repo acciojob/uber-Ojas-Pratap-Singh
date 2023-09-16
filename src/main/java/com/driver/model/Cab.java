@@ -25,7 +25,7 @@ public class Cab{
         //all args constructor
         this.Id=Id;
         this.perKmRate = perKmRate;
-        this. available =  available;
+        this.available =  available;
     }
     public Cab(int perKmRate ){
         this.perKmRate = perKmRate;
@@ -50,7 +50,7 @@ public class Cab{
         this.perKmRate = perKmRate;
     }
 
-    public boolean isAvailable() {
+    public boolean getAvailable() {
         return available;
     }
 
