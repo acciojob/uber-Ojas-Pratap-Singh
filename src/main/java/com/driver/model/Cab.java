@@ -10,7 +10,7 @@ public class Cab{
     private int Id;
 
     private int perKmRate;
-    private boolean avaiable;
+    private boolean available;
 
     //mapping b/w cab and driver where driver is parent and cab is child
     @OneToOne(mappedBy = "cab",cascade = CascadeType.ALL)
@@ -25,7 +25,7 @@ public class Cab{
         //all args constructor
         this.Id=Id;
         this.perKmRate = perKmRate;
-        this. avaiable =  avaiable;
+        this. available =  avaiable;
     }
     public Cab(int perKmRate ){
         this.perKmRate = perKmRate;
@@ -50,11 +50,19 @@ public class Cab{
         this.perKmRate = perKmRate;
     }
 
-    public boolean isAvaiable() {
-        return avaiable;
+    public boolean isAvailable() {
+        return available;
     }
 
-    public void setAvaiable(boolean avaiable) {
-        this.avaiable = avaiable;
+    public void setAvailable(boolean avaiable) {
+        this.available = avaiable;
+    }
+
+    public Driver getDriver() {
+        return driver;
+    }
+
+    public void setDriver(Driver driver) {
+        this.driver = driver;
     }
 }
