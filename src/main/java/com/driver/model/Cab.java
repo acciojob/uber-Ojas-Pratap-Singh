@@ -54,7 +54,7 @@ public class Cab{
         return available;
     }
 
-    public void setAvailable(boolean avaiable) {
+    public void setAvailable(boolean available) {
         this.available = available;
     }
 
